@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/eclipse,java
+# Created by https://www.gitignore.io/api/java,eclipse
 
 ### Eclipse ###
 
@@ -54,9 +54,15 @@ local.properties
 # Code Recommenders
 .recommenders/
 
-
-# Java
+### Java ###
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -65,6 +71,11 @@ local.properties
 *.jar
 *.war
 *.ear
+*.zip
+*.tar.gz
+*.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# End of https://www.gitignore.io/api/java,eclipse
