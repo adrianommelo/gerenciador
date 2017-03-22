@@ -35,7 +35,7 @@ public class BuscaEmpresa extends HttpServlet {
 	}
 	
 	
-	String filtro;
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter writer = resp.getWriter();
@@ -44,7 +44,7 @@ public class BuscaEmpresa extends HttpServlet {
 		writer.println("<body>");
 		writer.println("Resultado da busca:<br/>");
 		
-		filtro = req.getParameter("filtro");
+		String filtro= req.getParameter("filtro");
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
