@@ -1,3 +1,4 @@
+
 # Created by https://www.gitignore.io/api/java,eclipse
 
 ### Eclipse ###
@@ -10,12 +11,12 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.settings/
+#.settings/
 .loadpath
 .recommenders
 
 # Eclipse Core
-.project
+#.project
 
 # External tool builders
 .externalToolBuilders/
@@ -30,7 +31,7 @@ local.properties
 .cproject
 
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
+#.classpath
 
 # Java annotation processor (APT)
 .factorypath
@@ -53,6 +54,11 @@ local.properties
 # Code Recommenders
 .recommenders/
 
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
 ### Java ###
 # Compiled class file
 *.class
@@ -67,12 +73,12 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+#*.jar
+#*.war
+#*.ear
+#*.zip
+#*.tar.gz
+#*.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
