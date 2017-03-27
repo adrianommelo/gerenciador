@@ -8,7 +8,7 @@
 		Logado como ${usuarioLogado.email} <br/>
 	</c:if>
 	
-	<form action="fazTudo?tarefa=NovaEmpresa" method="post">
+	<form action="executa?tarefa=NovaEmpresa" method="post">
 		Nome: <input type="text" name="nome" /><br />
 		<input type="submit" value="Enviar" />
 	</form>
@@ -21,8 +21,8 @@
 	<!-- é possivel passar o parametro já dentro da action, mas não é uma boa prática-->
 	<!-- <form action="fazTudo?tarefa=Logout" method="post"> -->
 	
-	<form action="fazTudo" method="post">
-		<input type="hidden" for="fazTudo" value="Logout">
+	<form action="executa" method="post">
+		<input type="hidden" for="executa" value="Logout">
 		<input type="submit" value="Logout" />
 	</form>
 </body>

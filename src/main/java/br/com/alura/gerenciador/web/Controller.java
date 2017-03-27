@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/fazTudo")
-public class FazTudo extends HttpServlet {
+@WebServlet(urlPatterns = "/executa")
+public class Controller extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp)
@@ -23,12 +23,11 @@ public class FazTudo extends HttpServlet {
 		
 		try {
 			//reflection
-			String nomeClasse = "br.com.alura.gerenciado.web"+tarefa;
+			String nomeClasse = "br.com.alura.gerenciador.web."+tarefa;
 			Class<?> tipo = Class.forName(nomeClasse);
 			Tarefa instancia = (Tarefa)tipo.newInstance();
 //			instancia.executa(req, resp);
-			
-			
+
 			//implementa o redirecionamento baseado na tarefa solicitada
 			String pagina = instancia.executa(req, resp);
 			RequestDispatcher dispatcher = req.getRequestDispatcher(pagina);
